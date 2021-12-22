@@ -17,4 +17,10 @@ def test_struct(test_struct_contract: StructTest):
     n = 775
     b = False
     t = 'test'
-    assert (n, b, t) == test_struct_contract.testStructEncoding((n, b ,t))
+    a = '0x3194cBDC3dbcd3E11a07892e7bA5c3394048Cc87'
+    i = [9, 9, 2, 4, 6]
+
+    # This is the key part
+    # In python, represent the struct as a tuple with the correct data types in order
+    struct = (n, b, t, a, i)
+    assert (n, b, t, a, i) == test_struct_contract.testStructEncoding(struct)
