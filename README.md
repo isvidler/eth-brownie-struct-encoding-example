@@ -11,6 +11,6 @@ Run `brownie test`
 2. [`tests/test_struct_encoding.py`](https://github.com/isvidler/eth-brownie-struct-encoding-example/blob/94535442ec94e7bb9d58da45f89b859f3c9f2027/tests/test_struct_encoding.py) - contains a test which does the actual struct encoding and function calling.
 
 ## How to encode structs with `eth-brownie`
-`brownie` actually handles encoding for you, in almost all cases. To call a smart contract function that accepts a struct as a parameter, pass in a tuple that contain the correct data types in order.
+`brownie` actually handles encoding for you, in almost all cases. To call a smart contract function that accepts a struct as a parameter, pass in a tuple that contains the correct data types in order.
 
 Refer to the [`test_struct` test](https://github.com/isvidler/eth-brownie-struct-encoding-example/blob/94535442ec94e7bb9d58da45f89b859f3c9f2027/tests/test_struct_encoding.py#L16 ) in [`tests/test_struct_encoding.py`](https://github.com/isvidler/eth-brownie-struct-encoding-example/blob/94535442ec94e7bb9d58da45f89b859f3c9f2027/tests/test_struct_encoding.py) for an example.
